@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=DynaPuff&display=swap" rel="stylesheet">
     <style>
         body {
-            background-color: rgb(171, 175, 163);
+            background-color: #686279 ;
             font-family: 'DynaPuff', cursive;
             padding-top: 45px;
         }
@@ -28,13 +28,13 @@
         }
         a,
         p {
-            color:rgb(52, 58, 41)
+            color:rgb(3, 3, 3)
         }
 
         .container {
-            max-width: 800px;
+            max-width:1000px;
             margin: auto;
-            background-color: rgb(170, 174, 162)
+            background-color: rgb(122, 106, 131)
         }
         
         .header-bar {
@@ -44,6 +44,132 @@
             padding: 10px;
             border-radius: 5px 5px 0 0;
             background: linear-gradient(90deg, rgb(78, 75, 71) 0%, #5f5b66 43%, #7a7092 100%);
+        }
+        
+        .task-wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px;
+            background-color: rgb(73, 67, 75);
+            border-top: 3px solid #2a292b;
+        }
+
+        .task-title {
+            display: flex;
+            padding: 15px;
+        }
+
+        .task-title a {
+            text-decoration: none;
+            color: #000000;
+            margin-left: 10px;
+        }
+
+        .task-complete-icon {
+            height: 15px;
+            width: 15px;
+            background-color: rgb(0, 253, 0);
+            border-radius: 50%;
+        }
+
+        .task-incomplete-icon {
+            height: 15px;
+            width: 15px;
+            background-color: rgb(161, 160, 160);
+            border-radius: 50%;
+        }
+
+        .delete-link {
+            text-decoration: none;
+            font-weight: 900;
+            color: #d83636;
+            font-size: 20px;
+            line-height: 0;
+            padding: 20px 0px;
+        }
+        .handle {
+            display: inline-block;
+            padding: 20px 16px;
+            cursor: grab;
+            user-select: none;
+        }
+
+        .handle:after,
+        .handle:before {
+            display: block;
+            content: "";
+        }
+
+        .handle:active,
+        .handle:active:before,
+        .handle:active:after {
+            cursor: grabbing;
+        }
+
+        .dropArea {
+            background-color: #828283;
+            color: black;
+            border: #ced6e0 1px solid;
+        }
+
+        .selectedTask {
+            opacity: 0.6;
+        }
+
+
+        #add-link {
+            color: #000000;
+            text-decoration: none;
+            font-size: 22px;
+            text-shadow: 1px 1px #000000;
+        }
+
+        #search-add-wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px;
+        }
+
+        @media screen and (max-width:220px) {
+            #search-add-wrapper {
+                padding: 5px;
+            }
+        }
+
+        input[type=text],
+        input[type=password],
+        textarea {
+            border: 4px solid #1f0624;
+            border-radius: 10px;
+            padding: 15px;
+            width: 92%;
+        }
+
+        label {
+            padding-top: 10px !important;
+            display: block;
+        }
+
+        ::placeholder {
+            font-weight: 300;
+            opacity: 0.5;
+        }
+
+        .button {
+            border: 1px solid #504a4a;
+            background-color: rgb(123, 90, 129);
+            color: #000000;
+            padding: 10px;
+            font-size: 17px;
+            border-radius: 10px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .card-body {
+            padding: 13px;
         }
 
     
